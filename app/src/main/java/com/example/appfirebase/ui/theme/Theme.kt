@@ -6,17 +6,19 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val DarkColorScheme = darkColorScheme(
-    primary = CyanAccent,
-    secondary = OrangeAccent,
-    background = DarkBackground,
-    surface = DarkSurface,
-    onPrimary = Color.Black,
-    onBackground = TextPrimary,
-    onSurface = TextPrimary
+    primary        = PcbGreenLight,
+    onPrimary      = Color.White,
+    secondary      = CopperGold,
+    onSecondary    = Color.Black,
+    background     = CarbonBlack,
+    surface        = SurfaceDark,
+    onBackground   = TextPrimary,
+    onSurface      = TextPrimary,
+    error          = ErrorRed
 )
 
 @Composable
-fun ComponentesTheme(content: @Composable () -> Unit) {
+fun AppFirebaseTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = DarkColorScheme,
         typography = Typography,
