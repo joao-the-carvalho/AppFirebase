@@ -59,7 +59,7 @@ fun PcbLogo(animate: Boolean) {
             size = androidx.compose.ui.geometry.Size(w*0.4f, h*0.4f)
         )
         // Trilhas (pinos) animadas
-        val pins = 4
+        val pins = 3
         for (i in 0 until pins) {
             val y = h*0.35f + (h*0.3f / pins) * i
             // esquerda
